@@ -7,39 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // serverElements = [{type: 'server', name: 'TestServer', content: 'Just a Test'}];
+  numbers = [1,2,3,4,5,6,7];
+  onlyOdd = false;
 
-  // oddNumbers: number[] = [];
-  // evenNumbers: number[] = [];
-  
-  // onServerAdded(serverData: {serverName: string, serverContent: string}){
-  //   this.serverElements.push({
-  //     type: 'server',
-  //     name: serverData.serverName,
-  //     content: serverData.serverContent
-  //   })
-  // };
-
-  // onBlueprintAdded(blueprintData: {serverName: string, serverContent: string}){
-  //   this.serverElements.push({
-  //     type: 'blueprint',
-  //     name: blueprintData.serverName,
-  //     content: blueprintData.serverContent
-  //   })
-  // }
-
-  // onIntervalFired(firedNumber: number) {
-  //   if(firedNumber % 2 ===0){
-  //     this.evenNumbers.push(firedNumber);
-  //   } else{
-  //     this.oddNumbers.push(firedNumber);
-  //   }
-  // }
-
-  loadedFeature = 'recepie';
-
-  onNavigate(feature: string) {
-    console.log(feature);
-    this.loadedFeature = feature;
-  }
 }
