@@ -1,42 +1,18 @@
-<app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <app-recepies *ngIf="loadedFeature === 'recepie'"></app-recepies>
-            <app-shopping-list *ngIf="loadedFeature != 'recepie'"></app-shopping-list>
-            <!-- <app-cockpit 
-            (serverCreated)="onServerAdded($event)"
-            (blueprintCreated)="onBlueprintAdded($event)"
-            >
-            </app-cockpit> -->
-        </div>
-    <!-- </div>
-     <hr>
-    <div class="row">
-        <div class="col-md-12">
-            <app-server-element 
-            *ngFor="let serverElement of serverElements"
-            [element]="serverElement"
-            ></app-server-element>
-        </div>
-    </div> -->
-
-    
-    <!-- <hr>
-    <div class="row">
         <div class="col-xs-12">
-            <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+            <button class="btn btn-primary">
+                Only show Odd numbers
+            </button>
+            <br><br>
+            <ul class="list-group">
+                <li class="list-group-item" 
+                *ngFor="let number of numbers"
+                
+                >{{number}}</li>
+            </ul>
+            <p appBasicHighlight >This is to check Basic Highlight directives</p>
+            <p appBetterHighlight >This is to check better Highlight directives</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <app-even *ngFor="let num of evenNumbers" [evenNumber]="num"></app-even>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <app-odd *ngFor="let num of oddNumbers" [oddNumber]="num">{{num}}</app-odd>
-        </div>
-    </div>
-    <hr> -->
 </div>
