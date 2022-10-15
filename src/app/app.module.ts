@@ -17,6 +17,10 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { ActiveAccountsComponent } from './active-accounts/active-accounts.component';
+import { InactiveAccountsComponent } from './inactive-accounts/inactive-accounts.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { DropdownDirective } from './shared/dropdown.directive';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    DropdownDirective
+    DropdownDirective,
+    AccountComponent,
+    NewAccountComponent,
+    ActiveAccountsComponent,
+    InactiveAccountsComponent
   ],
   imports: [
     BrowserModule,
